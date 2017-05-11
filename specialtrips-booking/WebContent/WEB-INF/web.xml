@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID" version="2.4">
+  <servlet>
+    <servlet-name>BookingServlet</servlet-name>
+    <servlet-class>com.externalui.example.BookingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookingServlet</servlet-name>
+    <url-pattern>/BookingServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>TasksServlet</servlet-name>
+    <servlet-class>com.externalui.example.TasksServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TasksServlet</servlet-name>
+    <url-pattern>/tasks</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ClaimServlet</servlet-name>
+    <servlet-class>com.externalui.example.ClaimServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClaimServlet</servlet-name>
+    <url-pattern>/claim</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CompleteServlet</servlet-name>
+    <servlet-class>com.externalui.example.CompleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CompleteServlet</servlet-name>
+    <url-pattern>/complete</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>SpecialTripsAgencyForm.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
